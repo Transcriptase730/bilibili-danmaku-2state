@@ -1,0 +1,17 @@
+# 统一行尾，避免跨平台 diff 噪音
+* text=auto eol=lf
+
+# 用户脚本与 CI 配置强制 LF（GitHub Actions / 油猴都按 LF 解析）
+*.js   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+
+# PowerShell 脚本保留 CRLF，兼容旧版 Windows PowerShell
+*.ps1  text eol=crlf
+
+# 二进制
+*.png binary
+*.jpg binary
+*.ico binary

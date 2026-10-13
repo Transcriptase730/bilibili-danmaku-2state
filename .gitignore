@@ -1,0 +1,33 @@
+# ---- 逆向研究产物：B 站线上 bundle 属其版权资源，仅本地留存，禁止提交 ----
+player_core.js
+video_jinkela.js
+video0.css
+bv_page.html
+npd/
+chunk_*.js
+chunk_report.json
+
+# ---- 调试脚本与中间产物 ----
+edgeprof/
+probe_player.py
+fetch_chunks.py
+fetch_chunks2.py
+find_labels.py
+cdp_drv.py
+cdp_*.json
+cdp_*.png
+cap.ps1
+
+# ---- 编辑器 / 系统 ----
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 依赖与日志（当前项目无，预留）----
+node_modules/
+*.log
+npm-debug.log*
+pnpm-debug.log*

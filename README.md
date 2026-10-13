@@ -81,34 +81,6 @@
 └── .github/workflows/lint.yml           # CI：node --check 语法校验
 ```
 
-> 仓库只收录上面这些文件。逆向研究时下载的线上 bundle（`core.*.js`、`widgets/npd.*.js` 等）属 B 站版权资源，已在 `.gitignore` 中排除，请勿提交。
-
-### 推送前请确认署名
-
-脚本头部与 `LICENSE` 已按下面这套填好，如要换成别的名义，一起改这几处：
-
-- `bilibili-danmaku-2state.user.js` → `@namespace`、`@homepageURL`、`@supportURL`、`@author`（现均为 `Transcriptase730`）
-- `LICENSE` → 版权行（现为 `Copyright (c) 2026 Transcriptase730`）
-
-`@namespace` **务必别指向 `bilibili.com`**（那是人家的域名），否则 Greasy Fork 可能判为命名空间冲突而拒收。
-
----
-
 ## 许可证
 
 本项目采用 [MIT License](./LICENSE) 开源。
-
-选它的理由：
-
-- 用户脚本生态的事实标准，Tampermonkey / Greasy Fork / 主流脚本仓库都认，别人一眼就懂能怎么用。
-- 极短、无附加条款，**允许任何人复制、修改、再发布、甚至商用**，只需保留版权声明与许可声明。
-- 无 copyleft 传染性，别人把它抄进自己的脚本合集不会引发合规纠纷 —— 对本项目这种"几十行补丁逻辑"最合适。
-- 相比 `Unlicense` / `CC0`，MIT 保留了署名，出问题时也留有免责声明，比彻底放弃版权更稳妥。
-
-> 注意：脚本通过修改页面运行时行为实现效果，与 B 站用户协议可能存在冲突，这是使用方式上的问题，不是许可证能解决的。许可证只约束代码本身的复制与分发。
-
----
-
-## 致谢
-
-- 灵感来自 B 站网页端播放器的一次弹幕开关灰度改版。
